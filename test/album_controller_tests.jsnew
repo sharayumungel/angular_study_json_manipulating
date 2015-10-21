@@ -1,0 +1,14 @@
+describe('albumCtrl', function(){
+
+	beforeEach(module('albumsApp'));
+
+	describe('getAblumsQuantity', function(){
+		it('should display 100 albums', inject(function($controller){
+			var scope = {};
+			var albumController = $controller('albumCtrl', {
+				$scope: scope
+			});
+			albumController.getAblumsQuantity().should.equal('100');
+		}));
+	});
+});

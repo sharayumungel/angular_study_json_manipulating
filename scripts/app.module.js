@@ -1,0 +1,2 @@
+angular
+	.module('albumsApp', ['dragService']);
